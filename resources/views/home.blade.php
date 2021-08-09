@@ -5,6 +5,7 @@
 @section('content')
     <div id="app">
         <home-component></home-component>
+        <lists-component></lists-component>
     </div>
 @stop
 

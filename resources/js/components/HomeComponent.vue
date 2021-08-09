@@ -22,3 +22,10 @@
         }
     }
 </script>
+
+<style lang="scss" scoped>
+.card-body {
+    padding: 15 px;
+    background-color: #f5eaea;
+}
+</style>

@@ -22,6 +22,7 @@ window.Vue = require('vue').default;
 Vue.component('home-component', require('./components/HomeComponent.vue').default);
 Vue.component('posts-component', require('./components/PostsComponent.vue').default);
 Vue.component('albums-component', require('./components/AlbumsComponent.vue').default);
+Vue.component('lists-component', require('./components/ListsComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
