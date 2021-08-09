@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-8">
+            <div class="col-md-12">
                 <div class="lists">
                     <div class="top">
                         <br>
@@ -9,7 +9,7 @@
                     </div>
 
                     <div class="content">
-                        <table class="table table-hover">
+                        <table class="table table-hover my_table">
                             <thead>
                                 <tr>
                                     <th scope="col">#</th>
@@ -19,26 +19,20 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
+                                <tr v-for="user in users" :key="user.id">
+                                    <th scope="row"><p class="myUsers">{{user.id}}</p></th>
+                                        <td><p class="myUsers">{{user.name}}</p></td>
+                                        <td><p class="myUsers">{{user.email}}</p></td>
+                                        <td><p class="myUsers">{{user.phone}}</p></td>
                                 </tr>
                             </tbody>
                         </table>    
                     </div>
                 </div>    
             </div>
-            <div class="container-users">
+            <!-- <div class="container-users">
                 {{users}}
-            </div>    
+            </div>     -->
         </div>        
     </div>
 </template>
@@ -75,5 +69,9 @@
     border: 1px solid #ccc;
     border-radius: 3px;
     background-color: #fff;
+}
+
+.myUsers {
+    font-size: 15px;
 }
 </style>

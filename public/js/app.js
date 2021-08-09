@@ -1980,12 +1980,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
-//
-//
-//
-//
-//
-//
 var axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -6633,7 +6627,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".lists[data-v-41c1c813] {\n  width: 100%;\n  padding: 20 px;\n  border: 1px solid #ccc;\n  border-radius: 3px;\n  background-color: #fff;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".lists[data-v-41c1c813] {\n  width: 100%;\n  padding: 20 px;\n  border: 1px solid #ccc;\n  border-radius: 3px;\n  background-color: #fff;\n}\n.myUsers[data-v-41c1c813] {\n  font-size: 15px;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -39199,10 +39193,48 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container" }, [
     _c("div", { staticClass: "row justify-content-center" }, [
-      _vm._m(0),
-      _vm._v(" "),
-      _c("div", { staticClass: "container-users" }, [
-        _vm._v("\n            " + _vm._s(_vm.users) + "\n        ")
+      _c("div", { staticClass: "col-md-12" }, [
+        _c("div", { staticClass: "lists" }, [
+          _vm._m(0),
+          _vm._v(" "),
+          _c("div", { staticClass: "content" }, [
+            _c("table", { staticClass: "table table-hover my_table" }, [
+              _vm._m(1),
+              _vm._v(" "),
+              _c(
+                "tbody",
+                _vm._l(_vm.users, function(user) {
+                  return _c("tr", { key: user.id }, [
+                    _c("th", { attrs: { scope: "row" } }, [
+                      _c("p", { staticClass: "myUsers" }, [
+                        _vm._v(_vm._s(user.id))
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c("p", { staticClass: "myUsers" }, [
+                        _vm._v(_vm._s(user.name))
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c("p", { staticClass: "myUsers" }, [
+                        _vm._v(_vm._s(user.email))
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c("p", { staticClass: "myUsers" }, [
+                        _vm._v(_vm._s(user.phone))
+                      ])
+                    ])
+                  ])
+                }),
+                0
+              )
+            ])
+          ])
+        ])
       ])
     ])
   ])
@@ -39212,53 +39244,27 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-md-8" }, [
-      _c("div", { staticClass: "lists" }, [
-        _c("div", { staticClass: "top" }, [
-          _c("br"),
-          _vm._v(" "),
-          _c("p", { staticStyle: { "text-align": "center" } }, [
-            _c("strong", [_vm._v("Clientes")])
-          ])
-        ]),
+    return _c("div", { staticClass: "top" }, [
+      _c("br"),
+      _vm._v(" "),
+      _c("p", { staticStyle: { "text-align": "center" } }, [
+        _c("strong", [_vm._v("Clientes")])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("thead", [
+      _c("tr", [
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("#")]),
         _vm._v(" "),
-        _c("div", { staticClass: "content" }, [
-          _c("table", { staticClass: "table table-hover" }, [
-            _c("thead", [
-              _c("tr", [
-                _c("th", { attrs: { scope: "col" } }, [_vm._v("#")]),
-                _vm._v(" "),
-                _c("th", { attrs: { scope: "col" } }, [_vm._v("Nome")]),
-                _vm._v(" "),
-                _c("th", { attrs: { scope: "col" } }, [_vm._v("E-mail")]),
-                _vm._v(" "),
-                _c("th", { attrs: { scope: "col" } }, [_vm._v("Tel:")])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("tbody", [
-              _c("tr", [
-                _c("th", { attrs: { scope: "row" } }, [_vm._v("1")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("Mark")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("Otto")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("@mdo")])
-              ]),
-              _vm._v(" "),
-              _c("tr", [
-                _c("th", { attrs: { scope: "row" } }, [_vm._v("2")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("Jacob")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("Thornton")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("@fat")])
-              ])
-            ])
-          ])
-        ])
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Nome")]),
+        _vm._v(" "),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("E-mail")]),
+        _vm._v(" "),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Tel:")])
       ])
     ])
   }
