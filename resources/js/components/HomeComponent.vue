@@ -3,10 +3,11 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">ConsumoApp - Posts</div>
+                    <div class="card-header">ConsumoApp</div>
 
                     <div class="card-body">
-                        Exemplo no posts
+                        <h5>Bem vindo ao painel de ConsumoApp.</h5>
+                        <p>Site com intuito de consumir recursos públicos do site <a href="https://jsonplaceholder.typicode.com/">{JSON} Placeholder</a></p>
                     </div>
                 </div>
             </div>

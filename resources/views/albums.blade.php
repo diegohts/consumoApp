@@ -2,12 +2,10 @@
 
 @section('title', 'ConsumoApp')
 
-@section('content_header')
-    <h1>ConsumoApp - Albums</h1>
-@stop
-
 @section('content')
-Albums
+    <div id="app">
+        <albums-component></albums-component>
+    </div>
 @stop
 
 @section('css')
