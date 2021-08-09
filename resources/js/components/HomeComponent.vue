@@ -8,6 +8,7 @@
                     <div class="card-body">
                         <h5>Bem vindo ao painel de ConsumoApp.</h5>
                         <p>Site com intuito de consumir recursos públicos do site <a href="https://jsonplaceholder.typicode.com/">{JSON} Placeholder</a></p>
+                        {{msg}}
                     </div>
                 </div>
             </div>
@@ -17,9 +18,14 @@
 
 <script>
     export default {
-        mounted() {
-            console.log('Component mounted.')
-        }
+        data() {
+            return {
+                msg: "Seja Bem Vindo!"
+            }
+        },
+        // mounted() {
+        //     console.log('Component mounted.')
+        // }
     }
 </script>
 

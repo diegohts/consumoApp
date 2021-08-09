@@ -36,14 +36,34 @@
                     </div>
                 </div>    
             </div>
+            <div class="container-users">
+                {{users}}
+            </div>    
         </div>        
     </div>
 </template>
 
 <script>
+    const axios = require('axios');
     export default {
-        mounted() {
-            console.log('Component mounted.')
+        data() {
+            return {
+                users: []
+            }
+        },
+        mounted()
+        {
+            this.getUsers();
+        },
+        methods: {
+            async getUsers(){
+                const response = await axios.get('https://jsonplaceholder.typicode.com/users');
+                if(response.status == 200){
+                    this.users = response.data;
+                } else {
+                    console.error("Ocorreu um erro na API.");
+                }
+            }
         }
     }
 </script>
