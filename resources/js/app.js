@@ -19,6 +19,7 @@ window.Vue = require('vue').default;
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
+//Componentes para telas
 Vue.component('home-component', require('./components/HomeComponent.vue').default);
 Vue.component('posts-component', require('./components/PostsComponent.vue').default);
 Vue.component('albums-component', require('./components/AlbumsComponent.vue').default);
@@ -28,6 +29,7 @@ Vue.component('login-component', require('./components/LoginComponent.vue').defa
 //Componentes para formularios
 Vue.component('input-container-component', require('./components/formularios/InputContainer.vue').default);
 Vue.component('table-component', require('./components/formularios/TableComponent.vue').default);
+Vue.component('card-component', require('./components/formularios/CardComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

@@ -2129,6 +2129,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _formularios_CardComponent_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./formularios/CardComponent.vue */ "./resources/js/components/formularios/CardComponent.vue");
 //
 //
 //
@@ -2173,6 +2174,26 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  components: {
+    CardComponent: _formularios_CardComponent_vue__WEBPACK_IMPORTED_MODULE_0__.default
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/formularios/CardComponent.vue?vue&type=script&lang=js&":
+/*!********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/formularios/CardComponent.vue?vue&type=script&lang=js& ***!
+  \********************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 //
 //
 //
@@ -2181,7 +2202,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  props: ['titulo']
+});
 
 /***/ }),
 
@@ -2275,6 +2305,7 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js"
  */
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
+//Componentes para telas
 
 Vue.component('home-component', __webpack_require__(/*! ./components/HomeComponent.vue */ "./resources/js/components/HomeComponent.vue").default);
 Vue.component('posts-component', __webpack_require__(/*! ./components/PostsComponent.vue */ "./resources/js/components/PostsComponent.vue").default);
@@ -2284,6 +2315,7 @@ Vue.component('login-component', __webpack_require__(/*! ./components/LoginCompo
 
 Vue.component('input-container-component', __webpack_require__(/*! ./components/formularios/InputContainer.vue */ "./resources/js/components/formularios/InputContainer.vue").default);
 Vue.component('table-component', __webpack_require__(/*! ./components/formularios/TableComponent.vue */ "./resources/js/components/formularios/TableComponent.vue").default);
+Vue.component('card-component', __webpack_require__(/*! ./components/formularios/CardComponent.vue */ "./resources/js/components/formularios/CardComponent.vue").default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -39149,6 +39181,45 @@ component.options.__file = "resources/js/components/PostsComponent.vue"
 
 /***/ }),
 
+/***/ "./resources/js/components/formularios/CardComponent.vue":
+/*!***************************************************************!*\
+  !*** ./resources/js/components/formularios/CardComponent.vue ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _CardComponent_vue_vue_type_template_id_204813a4___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CardComponent.vue?vue&type=template&id=204813a4& */ "./resources/js/components/formularios/CardComponent.vue?vue&type=template&id=204813a4&");
+/* harmony import */ var _CardComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CardComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/formularios/CardComponent.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
+  _CardComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
+  _CardComponent_vue_vue_type_template_id_204813a4___WEBPACK_IMPORTED_MODULE_0__.render,
+  _CardComponent_vue_vue_type_template_id_204813a4___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/formularios/CardComponent.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
 /***/ "./resources/js/components/formularios/InputContainer.vue":
 /*!****************************************************************!*\
   !*** ./resources/js/components/formularios/InputContainer.vue ***!
@@ -39307,6 +39378,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/formularios/CardComponent.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************!*\
+  !*** ./resources/js/components/formularios/CardComponent.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CardComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./CardComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/formularios/CardComponent.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CardComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
+
+/***/ }),
+
 /***/ "./resources/js/components/formularios/InputContainer.vue?vue&type=script&lang=js&":
 /*!*****************************************************************************************!*\
   !*** ./resources/js/components/formularios/InputContainer.vue?vue&type=script&lang=js& ***!
@@ -39446,6 +39533,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_PostsComponent_vue_vue_type_template_id_38048495___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_PostsComponent_vue_vue_type_template_id_38048495___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./PostsComponent.vue?vue&type=template&id=38048495& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/PostsComponent.vue?vue&type=template&id=38048495&");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/formularios/CardComponent.vue?vue&type=template&id=204813a4&":
+/*!**********************************************************************************************!*\
+  !*** ./resources/js/components/formularios/CardComponent.vue?vue&type=template&id=204813a4& ***!
+  \**********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CardComponent_vue_vue_type_template_id_204813a4___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CardComponent_vue_vue_type_template_id_204813a4___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CardComponent_vue_vue_type_template_id_204813a4___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./CardComponent.vue?vue&type=template&id=204813a4& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/formularios/CardComponent.vue?vue&type=template&id=204813a4&");
 
 
 /***/ }),
@@ -39871,121 +39975,177 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container" }, [
     _c("div", { staticClass: "row justify-content-center" }, [
-      _c("div", { staticClass: "col-md-8" }, [
-        _c("div", { staticClass: "card" }, [
-          _c("div", { staticClass: "card-header" }, [
-            _vm._v("ConsumoApp - Busca de Posts")
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "card-body" }, [
-            _c("div", { staticClass: "form-row" }, [
-              _c(
-                "div",
-                { staticClass: "col mb-3" },
-                [
-                  _c(
-                    "input-container-component",
-                    {
-                      attrs: {
-                        titulo: "ID",
-                        id: "inputId",
-                        "id-help": "idHelp",
-                        "texto-ajuda": "Opcional. Informe o nome do registro."
-                      }
-                    },
-                    [
-                      _c("input", {
-                        staticClass: "form-control",
-                        attrs: {
-                          type: "number",
-                          id: "inputId",
-                          "aria-describedby": "idHelp",
-                          placeholder: "Informe o ID do registro",
-                          required: ""
-                        }
-                      })
-                    ]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _vm._m(0)
+      _c(
+        "div",
+        { staticClass: "col-md-8" },
+        [
+          _c("card-component", {
+            attrs: { titulo: "Busca de Posts" },
+            scopedSlots: _vm._u([
+              {
+                key: "conteudo",
+                fn: function() {
+                  return [
+                    _c("div", { staticClass: "form-row" }, [
+                      _c(
+                        "div",
+                        { staticClass: "col mb-3" },
+                        [
+                          _c(
+                            "input-container-component",
+                            {
+                              attrs: {
+                                titulo: "ID",
+                                id: "inputId",
+                                "id-help": "idHelp",
+                                "texto-ajuda":
+                                  "Opcional. Informe o nome do post."
+                              }
+                            },
+                            [
+                              _c("input", {
+                                staticClass: "form-control",
+                                attrs: {
+                                  type: "number",
+                                  id: "inputId",
+                                  "aria-describedby": "idHelp",
+                                  placeholder: "Informe o ID do post",
+                                  required: ""
+                                }
+                              })
+                            ]
+                          )
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "col mb-3" },
+                        [
+                          _c(
+                            "input-container-component",
+                            {
+                              attrs: {
+                                titulo: "Nome do post",
+                                id: "inputNome",
+                                "id-help": "nomeHelp",
+                                "texto-ajuda":
+                                  "Opcional. Informe o nome do post."
+                              }
+                            },
+                            [
+                              _c("input", {
+                                staticClass: "form-control",
+                                attrs: {
+                                  type: "text",
+                                  id: "inputNome",
+                                  "aria-describedby": "nomeHelp",
+                                  placeholder: "Informe o nome do post"
+                                }
+                              })
+                            ]
+                          )
+                        ],
+                        1
+                      )
+                    ])
+                  ]
+                },
+                proxy: true
+              },
+              {
+                key: "rodape",
+                fn: function() {
+                  return [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-primary bn-sm float-right",
+                        attrs: { type: "submit" }
+                      },
+                      [_vm._v("Pesquisar")]
+                    )
+                  ]
+                },
+                proxy: true
+              }
             ])
-          ]),
+          }),
           _vm._v(" "),
-          _vm._m(1)
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "card mb-3" }, [
-          _c("div", { staticClass: "card-header" }, [
-            _vm._v("ConsumoApp - Relação de Posts")
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "card-body" }, [_c("table-component")], 1),
-          _vm._v(" "),
-          _vm._m(2)
-        ])
-      ])
+          _c(
+            "div",
+            { staticClass: "card mb-3" },
+            [
+              _c("card-component", {
+                attrs: { titulo: "ConsumoApp - Relação de Posts" },
+                scopedSlots: _vm._u([
+                  {
+                    key: "conteudo",
+                    fn: function() {
+                      return [_c("table-component")]
+                    },
+                    proxy: true
+                  },
+                  {
+                    key: "rodape",
+                    fn: function() {
+                      return [
+                        _c(
+                          "button",
+                          {
+                            staticClass: "btn btn-primary bn-sm float-right",
+                            attrs: { type: "button" }
+                          },
+                          [_vm._v("Adicionar")]
+                        )
+                      ]
+                    },
+                    proxy: true
+                  }
+                ])
+              })
+            ],
+            1
+          )
+        ],
+        1
+      )
     ])
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col mb-3" }, [
-      _c("label", { attrs: { for: "inputNome" } }, [_vm._v("Nome")]),
-      _vm._v(" "),
-      _c("input", {
-        staticClass: "form-control",
-        attrs: {
-          type: "nome",
-          id: "inputNome",
-          "aria-describedby": "nomeHelp",
-          placeholder: "Informe o nome do registro"
-        }
-      }),
-      _vm._v(" "),
-      _c(
-        "small",
-        { staticClass: "form-text text-muted", attrs: { id: "idHelp" } },
-        [_vm._v("Opcional. Informe o ID do registro.")]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-footer" }, [
-      _c(
-        "button",
-        {
-          staticClass: "btn btn-primary bn-sm float-right",
-          attrs: { type: "submit" }
-        },
-        [_vm._v("Pesquisar")]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-footer" }, [
-      _c(
-        "button",
-        {
-          staticClass: "btn btn-primary bn-sm float-right",
-          attrs: { type: "button" }
-        },
-        [_vm._v("Adicionar")]
-      )
-    ])
-  }
-]
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/formularios/CardComponent.vue?vue&type=template&id=204813a4&":
+/*!*************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/formularios/CardComponent.vue?vue&type=template&id=204813a4& ***!
+  \*************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "card" }, [
+    _c("div", { staticClass: "card-header" }, [_vm._v(_vm._s(_vm.titulo))]),
+    _vm._v(" "),
+    _c("div", { staticClass: "card-body" }, [_vm._t("conteudo")], 2),
+    _vm._v(" "),
+    _c("div", { staticClass: "card-footer" }, [_vm._t("rodape")], 2)
+  ])
+}
+var staticRenderFns = []
 render._withStripped = true
 
 
