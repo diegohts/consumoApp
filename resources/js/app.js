@@ -23,6 +23,7 @@ Vue.component('home-component', require('./components/HomeComponent.vue').defaul
 Vue.component('posts-component', require('./components/PostsComponent.vue').default);
 Vue.component('albums-component', require('./components/AlbumsComponent.vue').default);
 Vue.component('lists-component', require('./components/ListsComponent.vue').default);
+Vue.component('login-component', require('./components/LoginComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

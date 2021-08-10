@@ -28,6 +28,10 @@ Route::get('/posts',[PostsController::class, 'index'])->name('posts');
 //Rota PostsController metodo index que lista todos albums
 Route::get('/albums',[AlbumsController::class, 'index'])->name('albums');
 
+Route::get('/login', function () {
+    return view('login');
+});
+
 //Rota alternativa
 Route::fallback(function(){
     return "Rota Inexistente (Página não encontrada)!";

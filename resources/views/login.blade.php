@@ -3,9 +3,8 @@
 @section('title', 'ConsumoApp')
 
 @section('content')
-    {{ @csrf_token() }}
     <div id="app">
-        <albums-component nome="titulo" acao="valores"></albums-component>
+        <login-component csrf_token="{{ @csrf_token() }}"></login-component>
     </div>
 @stop
 
