@@ -5,17 +5,17 @@
                 <div class="lists">
                     <div class="top">
                         <br>
-                        <p style="text-align:center"><strong>Clientes</strong></p>
+                        <p style="text-align:center"><strong>Clientes </strong><span class="badge badge-info">{{users.length}}</span></p>
                     </div>
 
                     <div class="content">
                         <table class="table table-hover my_table">
                             <thead>
-                                <tr>
+                                <tr class="table_head">
                                     <th scope="col">#</th>
                                     <th scope="col">Nome</th>
                                     <th scope="col">E-mail</th>
-                                    <th scope="col">Tel:</th>
+                                    <th scope="col">Contato</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -74,4 +74,13 @@
 .myUsers {
     font-size: 15px;
 }
+
+.table_head {
+    background-color: #CEF6EC;
+}
+
+.top {
+    font-size: 15px;
+}
+
 </style>

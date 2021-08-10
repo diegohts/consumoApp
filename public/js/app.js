@@ -6627,7 +6627,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".lists[data-v-41c1c813] {\n  width: 100%;\n  padding: 20 px;\n  border: 1px solid #ccc;\n  border-radius: 3px;\n  background-color: #fff;\n}\n.myUsers[data-v-41c1c813] {\n  font-size: 15px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".lists[data-v-41c1c813] {\n  width: 100%;\n  padding: 20 px;\n  border: 1px solid #ccc;\n  border-radius: 3px;\n  background-color: #fff;\n}\n.myUsers[data-v-41c1c813] {\n  font-size: 15px;\n}\n.table_head[data-v-41c1c813] {\n  background-color: #CEF6EC;\n}\n.top[data-v-41c1c813] {\n  font-size: 15px;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -39195,11 +39195,20 @@ var render = function() {
     _c("div", { staticClass: "row justify-content-center" }, [
       _c("div", { staticClass: "col-md-12" }, [
         _c("div", { staticClass: "lists" }, [
-          _vm._m(0),
+          _c("div", { staticClass: "top" }, [
+            _c("br"),
+            _vm._v(" "),
+            _c("p", { staticStyle: { "text-align": "center" } }, [
+              _c("strong", [_vm._v("Clientes ")]),
+              _c("span", { staticClass: "badge badge-info" }, [
+                _vm._v(_vm._s(_vm.users.length))
+              ])
+            ])
+          ]),
           _vm._v(" "),
           _c("div", { staticClass: "content" }, [
             _c("table", { staticClass: "table table-hover my_table" }, [
-              _vm._m(1),
+              _vm._m(0),
               _vm._v(" "),
               _c(
                 "tbody",
@@ -39244,27 +39253,15 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "top" }, [
-      _c("br"),
-      _vm._v(" "),
-      _c("p", { staticStyle: { "text-align": "center" } }, [
-        _c("strong", [_vm._v("Clientes")])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
     return _c("thead", [
-      _c("tr", [
+      _c("tr", { staticClass: "table_head" }, [
         _c("th", { attrs: { scope: "col" } }, [_vm._v("#")]),
         _vm._v(" "),
         _c("th", { attrs: { scope: "col" } }, [_vm._v("Nome")]),
         _vm._v(" "),
         _c("th", { attrs: { scope: "col" } }, [_vm._v("E-mail")]),
         _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Tel:")])
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Contato")])
       ])
     ])
   }
