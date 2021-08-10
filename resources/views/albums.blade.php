@@ -4,7 +4,7 @@
 
 @section('content')
     <div id="app">
-        <albums-component></albums-component>
+        <albums-component nome="titulo" acao="valores"></albums-component>
     </div>
 @stop
 
