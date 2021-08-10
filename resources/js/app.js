@@ -25,6 +25,10 @@ Vue.component('albums-component', require('./components/AlbumsComponent.vue').de
 Vue.component('lists-component', require('./components/ListsComponent.vue').default);
 Vue.component('login-component', require('./components/LoginComponent.vue').default);
 
+//Componentes para formularios
+Vue.component('input-container-component', require('./components/formularios/InputContainer.vue').default);
+Vue.component('table-component', require('./components/formularios/TableComponent.vue').default);
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
