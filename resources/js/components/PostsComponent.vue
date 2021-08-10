@@ -44,20 +44,22 @@
             <template v-slot:conteudo>
                 <div class="form-group">
                     <input-container-component titulo="Titulo do post" id="inputNovoNome" id-help="novoNomeHelp" texto-ajuda="Opcional. Informe o nome do post.">
-                        <input type="text" class="form-control" id="inputNovoNome" aria-describedby="novoNomeHelp" placeholder="Informe o nome do post">  
+                        <input type="text" class="form-control" id="inputNovoNome" aria-describedby="novoNomeHelp" placeholder="Informe o nome do post" v-model="nomePost">  
                     </input-container-component>
+                    {{nomePost}}
                 </div>    
 
                 <div class="form-group">
                     <input-container-component titulo="Corpo do post" id="inputNovoCorpo" id-help="NovoCorpoHelp" texto-ajuda="Opcional. Informe o corpo do post.">
-                        <input type="text" class="form-control" id="inputNovoCorpo" aria-describedby="NovoCorpoHelp" placeholder="Informe o corpo do post">  
+                        <input type="text" class="form-control" id="inputNovoCorpo" aria-describedby="NovoCorpoHelp" placeholder="Informe o corpo do post" v-model="nomeBody">  
                     </input-container-component>
+                    {{nomeBody}}
                 </div> 
             </template>  
 
             <template v-slot:rodape>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                <button type="button" class="btn btn-primary">Salvar</button>
+                <button type="button" class="btn btn-primary" @click="salvar">Salvar</button>
             </template>    
 
         </modal-component>
@@ -68,6 +70,37 @@
 <script>
   export default 
     {
+        data(){
+            return {
+                urlBase: "https://jsonplaceholder.typicode.com/posts",
+                nomePost: '',
+                nomeBody: ''
+            }
+        },
+        methods: {
+            salvar() {
+                console.log(this.nomePost, this.nomeBody)
+                
+                let formData = new FormData();
+                // Atribui valores para o formData
+                formData.append('title', this.nomePost)
+                formData.append('body', this.nomeBody)
 
+                let config = {
+                    headers: {
+                        'Content-Type': 'multipart/form-data',
+                        'Accept': 'application/json'
+                    }
+                }
+
+                axios.post(this.urlBase, formData, config)
+                    .then(response => {
+                        console.log(response)
+                    })
+                    .catch(erros => {
+                        console.log(errors)
+                    })
+            }
+        }    
     }
 </script>
