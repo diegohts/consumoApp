@@ -30,6 +30,7 @@ Vue.component('login-component', require('./components/LoginComponent.vue').defa
 Vue.component('input-container-component', require('./components/formularios/InputContainer.vue').default);
 Vue.component('table-component', require('./components/formularios/TableComponent.vue').default);
 Vue.component('card-component', require('./components/formularios/CardComponent.vue').default);
+Vue.component('modal-component', require('./components/formularios/ModalComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

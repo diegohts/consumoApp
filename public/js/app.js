@@ -2129,7 +2129,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _formularios_CardComponent_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./formularios/CardComponent.vue */ "./resources/js/components/formularios/CardComponent.vue");
 //
 //
 //
@@ -2174,12 +2173,30 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  components: {
-    CardComponent: _formularios_CardComponent_vue__WEBPACK_IMPORTED_MODULE_0__.default
-  }
-});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
 
 /***/ }),
 
@@ -2236,6 +2253,44 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: ['id', 'titulo', 'idHelp', 'textoAjuda']
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/formularios/ModalComponent.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/formularios/ModalComponent.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  props: ['id', 'titulo']
 });
 
 /***/ }),
@@ -2316,6 +2371,7 @@ Vue.component('login-component', __webpack_require__(/*! ./components/LoginCompo
 Vue.component('input-container-component', __webpack_require__(/*! ./components/formularios/InputContainer.vue */ "./resources/js/components/formularios/InputContainer.vue").default);
 Vue.component('table-component', __webpack_require__(/*! ./components/formularios/TableComponent.vue */ "./resources/js/components/formularios/TableComponent.vue").default);
 Vue.component('card-component', __webpack_require__(/*! ./components/formularios/CardComponent.vue */ "./resources/js/components/formularios/CardComponent.vue").default);
+Vue.component('modal-component', __webpack_require__(/*! ./components/formularios/ModalComponent.vue */ "./resources/js/components/formularios/ModalComponent.vue").default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -39259,6 +39315,45 @@ component.options.__file = "resources/js/components/formularios/InputContainer.v
 
 /***/ }),
 
+/***/ "./resources/js/components/formularios/ModalComponent.vue":
+/*!****************************************************************!*\
+  !*** ./resources/js/components/formularios/ModalComponent.vue ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _ModalComponent_vue_vue_type_template_id_67bd5b89___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ModalComponent.vue?vue&type=template&id=67bd5b89& */ "./resources/js/components/formularios/ModalComponent.vue?vue&type=template&id=67bd5b89&");
+/* harmony import */ var _ModalComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ModalComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/formularios/ModalComponent.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
+  _ModalComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
+  _ModalComponent_vue_vue_type_template_id_67bd5b89___WEBPACK_IMPORTED_MODULE_0__.render,
+  _ModalComponent_vue_vue_type_template_id_67bd5b89___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/formularios/ModalComponent.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
 /***/ "./resources/js/components/formularios/TableComponent.vue":
 /*!****************************************************************!*\
   !*** ./resources/js/components/formularios/TableComponent.vue ***!
@@ -39407,6 +39502,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_InputContainer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./InputContainer.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/formularios/InputContainer.vue?vue&type=script&lang=js&");
  /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_InputContainer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
+
+/***/ }),
+
+/***/ "./resources/js/components/formularios/ModalComponent.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************!*\
+  !*** ./resources/js/components/formularios/ModalComponent.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ModalComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./ModalComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/formularios/ModalComponent.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ModalComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
 
 /***/ }),
 
@@ -39567,6 +39678,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_InputContainer_vue_vue_type_template_id_898879e0___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_InputContainer_vue_vue_type_template_id_898879e0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./InputContainer.vue?vue&type=template&id=898879e0& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/formularios/InputContainer.vue?vue&type=template&id=898879e0&");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/formularios/ModalComponent.vue?vue&type=template&id=67bd5b89&":
+/*!***********************************************************************************************!*\
+  !*** ./resources/js/components/formularios/ModalComponent.vue?vue&type=template&id=67bd5b89& ***!
+  \***********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ModalComponent_vue_vue_type_template_id_67bd5b89___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ModalComponent_vue_vue_type_template_id_67bd5b89___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ModalComponent_vue_vue_type_template_id_67bd5b89___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./ModalComponent.vue?vue&type=template&id=67bd5b89& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/formularios/ModalComponent.vue?vue&type=template&id=67bd5b89&");
 
 
 /***/ }),
@@ -39973,146 +40101,250 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container" }, [
-    _c("div", { staticClass: "row justify-content-center" }, [
-      _c(
-        "div",
-        { staticClass: "col-md-8" },
-        [
-          _c("card-component", {
-            attrs: { titulo: "Busca de Posts" },
-            scopedSlots: _vm._u([
-              {
-                key: "conteudo",
-                fn: function() {
-                  return [
-                    _c("div", { staticClass: "form-row" }, [
-                      _c(
-                        "div",
-                        { staticClass: "col mb-3" },
-                        [
-                          _c(
-                            "input-container-component",
-                            {
-                              attrs: {
-                                titulo: "ID",
-                                id: "inputId",
-                                "id-help": "idHelp",
-                                "texto-ajuda":
-                                  "Opcional. Informe o nome do post."
-                              }
-                            },
-                            [
-                              _c("input", {
-                                staticClass: "form-control",
-                                attrs: {
-                                  type: "number",
-                                  id: "inputId",
-                                  "aria-describedby": "idHelp",
-                                  placeholder: "Informe o ID do post",
-                                  required: ""
-                                }
-                              })
-                            ]
-                          )
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        { staticClass: "col mb-3" },
-                        [
-                          _c(
-                            "input-container-component",
-                            {
-                              attrs: {
-                                titulo: "Nome do post",
-                                id: "inputNome",
-                                "id-help": "nomeHelp",
-                                "texto-ajuda":
-                                  "Opcional. Informe o nome do post."
-                              }
-                            },
-                            [
-                              _c("input", {
-                                staticClass: "form-control",
-                                attrs: {
-                                  type: "text",
-                                  id: "inputNome",
-                                  "aria-describedby": "nomeHelp",
-                                  placeholder: "Informe o nome do post"
-                                }
-                              })
-                            ]
-                          )
-                        ],
-                        1
-                      )
-                    ])
-                  ]
-                },
-                proxy: true
-              },
-              {
-                key: "rodape",
-                fn: function() {
-                  return [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary bn-sm float-right",
-                        attrs: { type: "submit" }
-                      },
-                      [_vm._v("Pesquisar")]
-                    )
-                  ]
-                },
-                proxy: true
-              }
-            ])
-          }),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "card mb-3" },
-            [
-              _c("card-component", {
-                attrs: { titulo: "ConsumoApp - Relação de Posts" },
-                scopedSlots: _vm._u([
-                  {
-                    key: "conteudo",
-                    fn: function() {
-                      return [_c("table-component")]
-                    },
-                    proxy: true
-                  },
-                  {
-                    key: "rodape",
-                    fn: function() {
-                      return [
+  return _c(
+    "div",
+    { staticClass: "container" },
+    [
+      _c("div", { staticClass: "row justify-content-center" }, [
+        _c(
+          "div",
+          { staticClass: "col-md-8" },
+          [
+            _c("card-component", {
+              attrs: { titulo: "Busca de Posts" },
+              scopedSlots: _vm._u([
+                {
+                  key: "conteudo",
+                  fn: function() {
+                    return [
+                      _c("div", { staticClass: "form-row" }, [
                         _c(
-                          "button",
-                          {
-                            staticClass: "btn btn-primary bn-sm float-right",
-                            attrs: { type: "button" }
-                          },
-                          [_vm._v("Adicionar")]
+                          "div",
+                          { staticClass: "col mb-3" },
+                          [
+                            _c(
+                              "input-container-component",
+                              {
+                                attrs: {
+                                  titulo: "ID",
+                                  id: "inputId",
+                                  "id-help": "idHelp",
+                                  "texto-ajuda":
+                                    "Opcional. Informe o nome do post."
+                                }
+                              },
+                              [
+                                _c("input", {
+                                  staticClass: "form-control",
+                                  attrs: {
+                                    type: "number",
+                                    id: "inputId",
+                                    "aria-describedby": "idHelp",
+                                    placeholder: "Informe o ID do post",
+                                    required: ""
+                                  }
+                                })
+                              ]
+                            )
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "col mb-3" },
+                          [
+                            _c(
+                              "input-container-component",
+                              {
+                                attrs: {
+                                  titulo: "Titulo do post",
+                                  id: "inputNome",
+                                  "id-help": "nomeHelp",
+                                  "texto-ajuda":
+                                    "Opcional. Informe o nome do post."
+                                }
+                              },
+                              [
+                                _c("input", {
+                                  staticClass: "form-control",
+                                  attrs: {
+                                    type: "text",
+                                    id: "inputNome",
+                                    "aria-describedby": "nomeHelp",
+                                    placeholder: "Informe o nome do post"
+                                  }
+                                })
+                              ]
+                            )
+                          ],
+                          1
                         )
-                      ]
+                      ])
+                    ]
+                  },
+                  proxy: true
+                },
+                {
+                  key: "rodape",
+                  fn: function() {
+                    return [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-primary bn-sm float-right",
+                          attrs: { type: "submit" }
+                        },
+                        [_vm._v("Pesquisar")]
+                      )
+                    ]
+                  },
+                  proxy: true
+                }
+              ])
+            }),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "card mb-3" },
+              [
+                _c("card-component", {
+                  attrs: { titulo: "ConsumoApp - Relação de Posts" },
+                  scopedSlots: _vm._u([
+                    {
+                      key: "conteudo",
+                      fn: function() {
+                        return [_c("table-component")]
+                      },
+                      proxy: true
                     },
-                    proxy: true
-                  }
-                ])
-              })
-            ],
-            1
-          )
-        ],
-        1
-      )
-    ])
-  ])
+                    {
+                      key: "rodape",
+                      fn: function() {
+                        return [
+                          _c(
+                            "button",
+                            {
+                              staticClass: "btn btn-primary bn-sm float-right",
+                              attrs: {
+                                type: "button",
+                                "data-toggle": "modal",
+                                "data-target": "#ModalPost"
+                              }
+                            },
+                            [_vm._v("Adicionar")]
+                          )
+                        ]
+                      },
+                      proxy: true
+                    }
+                  ])
+                })
+              ],
+              1
+            )
+          ],
+          1
+        )
+      ]),
+      _vm._v(" "),
+      _c("modal-component", {
+        attrs: { id: "ModalPost", titulo: "Adicionar Post" },
+        scopedSlots: _vm._u([
+          {
+            key: "conteudo",
+            fn: function() {
+              return [
+                _c(
+                  "div",
+                  { staticClass: "form-group" },
+                  [
+                    _c(
+                      "input-container-component",
+                      {
+                        attrs: {
+                          titulo: "Titulo do post",
+                          id: "inputNovoNome",
+                          "id-help": "novoNomeHelp",
+                          "texto-ajuda": "Opcional. Informe o nome do post."
+                        }
+                      },
+                      [
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "text",
+                            id: "inputNovoNome",
+                            "aria-describedby": "novoNomeHelp",
+                            placeholder: "Informe o nome do post"
+                          }
+                        })
+                      ]
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "form-group" },
+                  [
+                    _c(
+                      "input-container-component",
+                      {
+                        attrs: {
+                          titulo: "Corpo do post",
+                          id: "inputNovoCorpo",
+                          "id-help": "NovoCorpoHelp",
+                          "texto-ajuda": "Opcional. Informe o corpo do post."
+                        }
+                      },
+                      [
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "text",
+                            id: "inputNovoCorpo",
+                            "aria-describedby": "NovoCorpoHelp",
+                            placeholder: "Informe o corpo do post"
+                          }
+                        })
+                      ]
+                    )
+                  ],
+                  1
+                )
+              ]
+            },
+            proxy: true
+          },
+          {
+            key: "rodape",
+            fn: function() {
+              return [
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-secondary",
+                    attrs: { type: "button", "data-dismiss": "modal" }
+                  },
+                  [_vm._v("Fechar")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  { staticClass: "btn btn-primary", attrs: { type: "button" } },
+                  [_vm._v("Salvar")]
+                )
+              ]
+            },
+            proxy: true
+          }
+        ])
+      })
+    ],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -40188,6 +40420,82 @@ var render = function() {
   )
 }
 var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/formularios/ModalComponent.vue?vue&type=template&id=67bd5b89&":
+/*!**************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/formularios/ModalComponent.vue?vue&type=template&id=67bd5b89& ***!
+  \**************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    {
+      staticClass: "modal fade",
+      attrs: {
+        id: _vm.id,
+        tabindex: "-1",
+        "aria-labelledby": "exampleModalLabel",
+        "aria-hidden": "true"
+      }
+    },
+    [
+      _c("div", { staticClass: "modal-dialog" }, [
+        _c("div", { staticClass: "modal-content" }, [
+          _c("div", { staticClass: "modal-header" }, [
+            _c(
+              "h5",
+              {
+                staticClass: "modal-title",
+                attrs: { id: "exampleModalLabel" }
+              },
+              [_vm._v(_vm._s(_vm.titulo))]
+            ),
+            _vm._v(" "),
+            _vm._m(0)
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "modal-body" }, [_vm._t("conteudo")], 2),
+          _vm._v(" "),
+          _c("div", { staticClass: "modal-footer" }, [_vm._t("rodape")], 2)
+        ])
+      ])
+    ]
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "button",
+      {
+        staticClass: "close",
+        attrs: {
+          type: "button",
+          "data-dismiss": "modal",
+          "aria-label": "Close"
+        }
+      },
+      [_c("span", { attrs: { "aria-hidden": "true" } }, [_vm._v("×")])]
+    )
+  }
+]
 render._withStripped = true
 
 
