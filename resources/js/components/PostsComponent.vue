@@ -41,19 +41,22 @@
         </div>
         
         <modal-component id="ModalPost" titulo="Adicionar Post">
+            <template v-slot:alerta>
+                <alert-component tipo="success" titulo= "Cadastro realizado com sucesso!" v-if="transacaoStatus == 'adicionado'"></alert-component>
+                <alert-component tipo="danger" titulo= "Erro ao tentar cadastrar!" :detalhes='transacaoDetalhes' v-if="transacaoStatus == 'erro'"></alert-component>
+            </template>
+            
             <template v-slot:conteudo>
                 <div class="form-group">
                     <input-container-component titulo="Titulo do post" id="inputNovoNome" id-help="novoNomeHelp" texto-ajuda="Opcional. Informe o nome do post.">
                         <input type="text" class="form-control" id="inputNovoNome" aria-describedby="novoNomeHelp" placeholder="Informe o nome do post" v-model="nomePost">  
                     </input-container-component>
-                    {{nomePost}}
                 </div>    
 
                 <div class="form-group">
                     <input-container-component titulo="Corpo do post" id="inputNovoCorpo" id-help="NovoCorpoHelp" texto-ajuda="Opcional. Informe o corpo do post.">
                         <input type="text" class="form-control" id="inputNovoCorpo" aria-describedby="NovoCorpoHelp" placeholder="Informe o corpo do post" v-model="nomeBody">  
                     </input-container-component>
-                    {{nomeBody}}
                 </div> 
             </template>  
 
@@ -74,7 +77,9 @@
             return {
                 urlBase: "https://jsonplaceholder.typicode.com/posts",
                 nomePost: '',
-                nomeBody: ''
+                nomeBody: '',
+                transacaoStatus: '',
+                transacaoDetalhes: []
             }
         },
         methods: {
@@ -95,10 +100,13 @@
 
                 axios.post(this.urlBase, formData, config)
                     .then(response => {
+                        this.transacaoStatus = 'adicionado'
                         console.log(response)
                     })
                     .catch(erros => {
-                        console.log(errors)
+                        this.transacaoStatus = 'erro'
+                        this.transacaoDetalhes = errors.response
+                        // errors.response.data.message
                     })
             }
         }    
