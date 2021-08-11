@@ -28,7 +28,11 @@
                 <div class="card mb-3">
                     <card-component titulo="ConsumoApp - Relação de Posts">
                         <template v-slot:conteudo>
-                            <table-component></table-component>
+                            <table-component 
+                            :dados="posts"
+                            :titulos="['ID do Post','titulo','ID do usuario']"
+                            >
+                            </table-component>
                         </template>
 
                         <template v-slot:rodape>
@@ -66,7 +70,6 @@
             </template>    
 
         </modal-component>
-
     </div>
 </template>
 
@@ -79,10 +82,21 @@
                 nomePost: '',
                 nomeBody: '',
                 transacaoStatus: '',
-                transacaoDetalhes: []
+                transacaoDetalhes: [],
+                posts: []
             }
         },
         methods: {
+            carregarLista() {
+                axios.get(this.urlBase)
+                    .then(response => {
+                        this.posts = response.data,
+                        console.log(this.posts)
+                    })
+                    .catch(errors =>{
+                        console.log(errors)
+                    })
+            },
             salvar() {
                 console.log(this.nomePost, this.nomeBody)
                 
@@ -109,6 +123,9 @@
                         // errors.response.data.message
                     })
             }
-        }    
+        }, 
+        mounted() {
+            this.carregarLista()
+        }
     }
 </script>

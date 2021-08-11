@@ -1,32 +1,24 @@
 <template>
-    <table class="table table-hover">
-        <thead>
-            <tr class="table_head">
-                <th scope="col">#</th>
-                <th scope="col">Nome</th>
-                <th scope="col">E-mail</th>
-                <th scope="col">Contato</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>markzuck@gmail</td>
-                    <td>xx1</td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                    <td>Contato</td>
-                    <td>contato@gmail</td>
-                    <td>xx2</td>
-            </tr>
-        </tbody>
-    </table>   
+    <div>
+        <table class="table table-hover">
+            <thead>
+                <tr class="table_head">
+                    <th scope="col" v-for="titulo, key in titulos" :key="key">{{ titulo }}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="dado in dados" :key="dado.id">
+                    <th scope="row">{{dado.id}}</th>
+                        <td>{{dado.title}}</td>
+                        <td>{{dado.userId}}</td>
+                </tr>
+            </tbody>
+        </table> 
+    </div>      
 </template>
 
 <script>
 export default {
-    
+    props: ['dados','titulos']
 }
 </script>
